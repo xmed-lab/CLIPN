@@ -1,4 +1,4 @@
-# CLIPN
+# CLIPN (ICCV 2023)
 # This is the official implementation for our paper "CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No" (ICCV 2023)
 
 
@@ -73,7 +73,7 @@ python3 zero_shot_infer.py
         <td colspan="2">Textures</td>
         <td colspan="2">Places</td>
         <td colspan="2">Avg</td>
-        <td rowspan="2">Models</td>
+        <td rowspan="2">Model/log</td>
     </tr>
     <tr align="center">
        <td>AUROC</td>
@@ -103,7 +103,7 @@ python3 zero_shot_infer.py
        <td>43.33</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1CRIKr0vwrvK4Mc63zfhg2o8cbEGct4oF?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>2</td>
@@ -117,7 +117,7 @@ python3 zero_shot_infer.py
        <td>33..85</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1eNaaPaRWz0La8_qQliX30A4I7Y44yDMY?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>3</td>
@@ -131,7 +131,7 @@ python3 zero_shot_infer.py
        <td>36.58</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1qF4Pm1JSL3P0H4losPSmvldubFj91dew?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>Avg</td>
@@ -160,7 +160,7 @@ python3 zero_shot_infer.py
        <td>36.98</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1CRIKr0vwrvK4Mc63zfhg2o8cbEGct4oF?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>2</td>
@@ -174,7 +174,7 @@ python3 zero_shot_infer.py
        <td>29.24</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1eNaaPaRWz0La8_qQliX30A4I7Y44yDMY?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>3</td>
@@ -188,7 +188,7 @@ python3 zero_shot_infer.py
        <td>30.11</td>
        <td>_</td>
        <td>_</td>
-       <td><a href="-">model</a></td>
+       <td><a href="https://drive.google.com/drive/folders/1qF4Pm1JSL3P0H4losPSmvldubFj91dew?usp=sharing">here</a></td>
     </tr>
     <tr align="center">
        <td>Avg</td>
@@ -215,6 +215,14 @@ python3 zero_shot_infer.py
 
 If you find our paper helps you, please kindly consider citing our paper in your publications.
 ```bash
+@misc{wang2023clipn,
+      title={CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No}, 
+      author={Hualiang Wang and Yi Li and Huifeng Yao and Xiaomeng Li},
+      year={2023},
+      eprint={2308.12213},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## 7. Acknowledge

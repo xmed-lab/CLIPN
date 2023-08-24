@@ -169,7 +169,7 @@ def cal_fpr_recall(ind_conf, ood_conf, tpr=0.95):
 if __name__ == '__main__':
     args = parse_arguments()
     
-    pth_dir = './logs/2023_08_23-14_19_03-model_ViT-B-16-lr_0.0003-b_512-j_4-p_amp'
+    pth_dir = './logs/2023_08_24-00_02_18-model_ViT-B-32-lr_0.0003-b_512-j_4-p_amp'
     
     header_ood = ['epoch', 'method', 'oodset', 'AUROC', 'FPR@95']
     ood_lis = []
