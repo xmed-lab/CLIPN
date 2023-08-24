@@ -63,7 +63,7 @@ python3 zero_shot_infer.py
 
 ***To ensure the reproducibility of the results, we conducted three repeated experiments under each configuration. The following will exhibit the most recent reproduced results achieved before open-sourcing.***
 
-- ImageNet-LT
+- ImageNet-1K
 <table>
     <tr align="center">
         <td rowspan="2">Methods</td>
