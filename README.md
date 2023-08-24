@@ -1,9 +1,8 @@
-# CLIPN (ICCV 2023)
 # This is the official implementation for our paper "CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No" (ICCV 2023)
 
 
 ## 1. News
-- Our paper is accepted by ICCV 2023. Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
+- Our [paper](https://arxiv.org/pdf/2308.12213.pdf) is accepted by ICCV 2023. Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
 
 
 ## 2. Install
