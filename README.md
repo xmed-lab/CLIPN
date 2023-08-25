@@ -2,8 +2,8 @@
 <img src="./title.png"/>
 </div>
 <div align=center>
-<a src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2308.12213-red.svg?style=flat-square" href="https://arxiv.org/abs/2308.12213">
-<img src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2308.12213-red.svg?style=flat-square">
+<a src="https://img.shields.io/badge/%F0%9F%93%96-ICCV_2023-red.svg?style=flat-square" href="https://arxiv.org/abs/2308.12213">
+<img src="https://img.shields.io/badge/%F0%9F%93%96-ICCV_2023-red.svg?style=flat-square">
 </a>
    
 <a src="https://img.shields.io/badge/%F0%9F%9A%80-xmed_Lab-ed6c00.svg?style=flat-square" href="https://xmengli.github.io/">
