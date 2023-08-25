@@ -11,11 +11,15 @@
 </a>
 </div>
 
-## 1. News
-- Our [paper](https://arxiv.org/pdf/2308.12213.pdf) is accepted by ICCV 2023. Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
+## :rocket: Updates
+- Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
+- If you are interested in CLIP-based open vocabulary tasks, please feel free to visit our another work! ["CLIP Surgery for Better Explainability with Enhancement in Open-Vocabulary Tasks"](https://arxiv.org/abs/2304.05653) ([github](https://github.com/xmed-lab/CLIP_Surgery)).
 
+## :star: Highlights of CLIPN
+- CLIPN attains SoTA performance in zero-shot OOD detection, all the while inheriting the in-distribution (ID) classification prowess of CLIP.
+- CLIPN offers an approach for unsupervised prompt learning using image-text-paired web-dataset.
 
-## 2. Install
+## :hammer: Installation
 - Main python libraries of our experimental environment are shown in [requirements.txt](./requirements.txt). You can install CLIPN following:
 ```shell
 git clone https://github.com/xmed-lab/CLIPN.git
@@ -33,7 +37,7 @@ conda create -n CLIPN --clone dir_of_your_download_env
 conda activate CLIPN
 ```
 
-## 3. Prepare Dataset
+## :computer: Prepare Dataset
 - Pre-training Dataset, CC3M.
 To download CC3M dataset as webdataset, please follow [img2dataset](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/cc3m.md).
 
@@ -45,7 +49,7 @@ When you have downloaded CC3M, please re-write your data root into [./src/run.sh
 
 When you have downloaded the above datasets, please re-write your data root into [./src/tuning_util.py](./src/tuning_util.py).
 
-## 4. Pre-Train and Evaluate CLIPN
+## :key: Pre-Train and Evaluate CLIPN
 
 - Pre-train CLIPN on CC3M.
    - The model of CLIPN is defined in [./src/open_clip/model.py](./src/open_clip/model.py)
@@ -68,7 +72,7 @@ python3 zero_shot_infer.py
 ```
 
 
-## 5. Reproduced Results
+## :blue_book: Reproduced Results
 
 ***To ensure the reproducibility of the results, we conducted three repeated experiments under each configuration. The following will exhibit the most recent reproduced results achieved before open-sourcing.***
 
@@ -220,20 +224,18 @@ python3 zero_shot_infer.py
 
 
 
-## 6. Citation
+## :books: Citation
 
 If you find our paper helps you, please kindly consider citing our paper in your publications.
 ```bash
-@misc{wang2023clipn,
-      title={CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No}, 
-      author={Hualiang Wang and Yi Li and Huifeng Yao and Xiaomeng Li},
-      year={2023},
-      eprint={2308.12213},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{wang2023clipn,
+  title={CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No},
+  author={Wang, Hualiang and Li, Yi and Yao, Huifeng and Li, Xiaomeng},
+  journal={arXiv preprint arXiv:2308.12213},
+  year={2023}
 }
 ```
 
-## 7. Acknowledge
+## :beers: Acknowledge
 We sincerely appreciate these three highly valuable repositories [open_clip](https://github.com/mlfoundations/open_clip), [MOS](https://github.com/deeplearning-wisc/large_scale_ood#out-of-distribution-dataset) and [MCM](https://github.com/deeplearning-wisc/MCM).
 
