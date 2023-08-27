@@ -26,7 +26,7 @@ git clone https://github.com/xmed-lab/CLIPN.git
 cd CLIPN
 conda create -n CLIPN
 conda activate CLIPN
-pip install -r ./requirement.txt
+pip install -r ./requirements.txt
 ```
 
 - We also provide the original conda env of our experiments, you can download here and install it:
@@ -51,8 +51,8 @@ When you have downloaded the above datasets, please re-write your data root into
 
 ## :key: Pre-Train and Evaluate CLIPN
 
-- Pre-train CLIPN on CC3M.
-   - The model of CLIPN is defined in [./src/open_clip/model.py](./src/open_clip/model.py)
+- Pre-train CLIPN on CC3M. ***This step is to empower "no" logic within CLIP via the web-dataset.*** 
+   - The model of CLIPN is defined in [./src/open_clip/model.py](./src/open_clip/model.py). Here, you can find a group of learnable 'no' token embeddings defined in Line 527.
    - The function of loading parameters of CLIP is defined in [./src/open_clip/factory.py](./src/open_clip/factory.py).
    - The loss functions are defined in [./src/open_clip/loss.py](./src/open_clip/loss.py).
    - You can pre-train CLIPN on ViT-B-32 and ViT-B-16 by:
@@ -62,11 +62,10 @@ sh run.sh
 ```
 
 - Zero-Shot Evaluate CLIPN on ImageNet-1K.
-   - Metrics and pipeline are defined in [./src/zero_shot_infer.py](./src/zero_shot_infer.py).
+   - Metrics and pipeline are defined in [./src/zero_shot_infer.py](./src/zero_shot_infer.py). Here you can find three baseline methods, and our two inference algorithms: CTW adn ATD (see Line 91-96). 
    - Dataset details are defined in [./src/tuning_util.py](./src/tuning_util.py).
    - Inference models are defined in [./src/classification.py](./src/classification.py), including converting the text encoders into classifiers.
-
-   - You can evaluate CLIPN by:
+   - You can download the models provided in the table below or pre-trained by yourself. Then re-write the path of your models in the main function of [./src/zero_shot_infer.py](./src/zero_shot_infer.py). Finally, evaluate CLIPN by:
 ```shell
 python3 zero_shot_infer.py
 ```
