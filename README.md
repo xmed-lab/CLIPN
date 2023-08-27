@@ -12,6 +12,7 @@
 </div>
 
 ## :rocket: Updates
+- The current released codes are the version of learnable "no" prompts. I will release codes of manual-defined "no" prompts as soon as possible.
 - Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
 - If you are interested in CLIP-based open vocabulary tasks, please feel free to visit our another work! ["CLIP Surgery for Better Explainability with Enhancement in Open-Vocabulary Tasks"](https://arxiv.org/abs/2304.05653) ([github](https://github.com/xmed-lab/CLIP_Surgery)).
 
@@ -221,7 +222,11 @@ python3 zero_shot_infer.py
 
 <font color='red'> The performance in this table is better than our paper </font>, because that we add an average learnable "no" prompt (see ***Line 600-616*** in [./src/open_clip/model.py](./src/open_clip/model.py)).
 
-
+## :pencil: Other Tips
+There are several important factors that could affect the performance:
+- Class prompt texts. In the inference period, we need to use prompt texts to get the weights of classifier (see [./src/prompt/prompt.txt](./src/prompt/prompt.txt)). You can hand on the design of high-performance inference prompts for our CLIPN.
+- The number of learnable "no" tokens. Now I just define the number of learnable "no" tokens as 16. You can vary it to find an optimal value.
+- If you have any ideas to enhance CLIPN or attempt to transfer this idea to other topics, feel free to discuss with me and I am happy to share some ideas with you.
 
 ## :books: Citation
 
