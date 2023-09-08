@@ -1,7 +1,8 @@
 <div align=center>
-<img src="./title.png"/>
+<h1> CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No </h1>
 </div>
 <div align=center>
+
 <a src="https://img.shields.io/badge/%F0%9F%93%96-ICCV_2023-red.svg?style=flat-square" href="https://arxiv.org/abs/2308.12213">
 <img src="https://img.shields.io/badge/%F0%9F%93%96-ICCV_2023-red.svg?style=flat-square">
 </a>
