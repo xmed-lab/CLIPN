@@ -16,7 +16,7 @@ def parse_args():
         "--train-data",
         type=str,
         default=None,
-        help="Path to csv filewith training data",
+        help="Path to csv file with training data",
     )
     parser.add_argument(
         "--val-data",
@@ -192,7 +192,7 @@ def parse_args():
         help='Override default image mean value of dataset')
     parser.add_argument(
         '--image-std', type=float, nargs='+', default=None, metavar='STD',
-        help='Override default image std deviation of of dataset')
+        help='Override default image std deviation of dataset')
     parser.add_argument(
         "--grad-checkpointing",
         default=False,
@@ -261,7 +261,7 @@ def parse_args():
         "--copy-codebase",
         default=False,
         action="store_true",
-        help="If true, we copy the entire base on the log diretory, and execute from there."
+        help="If true, we copy the entire base on the log directory, and execute from there."
     )
     parser.add_argument(
         "--horovod",

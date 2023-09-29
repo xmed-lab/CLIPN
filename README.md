@@ -47,7 +47,7 @@ When you have downloaded CC3M, please re-write your data root into [./src/run.sh
 
 - OOD detection datasets.
    - ID dataset, ImageNet-1K: The ImageNet-1k dataset (ILSVRC-2012) can be downloaded [here](https://image-net.org/challenges/LSVRC/2012/index.php#).
-   - OOD dataset, iNaturalist, SUN, Places, and Texture. Please follow instruction from the these two repositories [MOS](https://github.com/deeplearning-wisc/large_scale_ood#out-of-distribution-dataset) and [MCM](https://github.com/deeplearning-wisc/MCM) to download the subsampled datasets where semantically overlapped classes with ImageNet-1k are removed.
+   - OOD dataset, iNaturalist, SUN, Places, and Texture. Please follow instruction from these two repositories [MOS](https://github.com/deeplearning-wisc/large_scale_ood#out-of-distribution-dataset) and [MCM](https://github.com/deeplearning-wisc/MCM) to download the subsampled datasets where semantically overlapped classes with ImageNet-1k are removed.
 
 When you have downloaded the above datasets, please re-write your data root into [./src/tuning_util.py](./src/tuning_util.py).
 
@@ -64,7 +64,7 @@ sh run.sh
 ```
 
 - Zero-Shot Evaluate CLIPN on ImageNet-1K.
-   - Metrics and pipeline are defined in [./src/zero_shot_infer.py](./src/zero_shot_infer.py). Here you can find three baseline methods, and our two inference algorithms: CTW adn ATD (see Line 91-96). 
+   - Metrics and pipeline are defined in [./src/zero_shot_infer.py](./src/zero_shot_infer.py). Here you can find three baseline methods, and our two inference algorithms: CTW and ATD (see Line 91-96). 
    - Dataset details are defined in [./src/tuning_util.py](./src/tuning_util.py).
    - Inference models are defined in [./src/classification.py](./src/classification.py), including converting the text encoders into classifiers.
    - You can download the models provided in the table below or pre-trained by yourself. Then re-write the path of your models in the main function of [./src/zero_shot_infer.py](./src/zero_shot_infer.py). Finally, evaluate CLIPN by:
