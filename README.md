@@ -31,14 +31,6 @@ conda activate CLIPN
 pip install -r ./requirements.txt
 ```
 
-- We also provide the original conda env of our experiments, you can download here and install it:
-```shell
-git clone https://github.com/xmed-lab/CLIPN.git
-cd CLIPN
-conda create -n CLIPN --clone dir_of_your_download_env
-conda activate CLIPN
-```
-
 ## :computer: Prepare Dataset
 - Pre-training Dataset, CC3M.
 To download CC3M dataset as webdataset, please follow [img2dataset](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/cc3m.md).
@@ -233,10 +225,11 @@ There are several important factors that could affect the performance:
 
 If you find our paper helps you, please kindly consider citing our paper in your publications.
 ```bash
-@article{wang2023clipn,
+@inproceedings{wang2023clipn,
   title={CLIPN for Zero-Shot OOD Detection: Teaching CLIP to Say No},
   author={Wang, Hualiang and Li, Yi and Yao, Huifeng and Li, Xiaomeng},
-  journal={arXiv preprint arXiv:2308.12213},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1802--1812},
   year={2023}
 }
 ```
