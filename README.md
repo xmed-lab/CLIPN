@@ -13,7 +13,8 @@
 </div>
 
 ## :rocket: Updates
-- The current released codes are the version of learnable "no" prompts. I will release codes of manual-defined "no" prompts as soon as possible.
+- The codes of CLIPN with hand-crafted prompts are released (./hand-crafted).
+- The codes of CLIPN with learnable prompts are released (./src). 
 - Thanks to the valuable suggestions from the reviewers of CVPR 2023 and ICCV 2023, our paper has been significantly improved, allowing it to be published at ICCV 2023.
 - If you are interested in CLIP-based open vocabulary tasks, please feel free to visit our another work! ["CLIP Surgery for Better Explainability with Enhancement in Open-Vocabulary Tasks"](https://arxiv.org/abs/2304.05653) ([github](https://github.com/xmed-lab/CLIP_Surgery)).
 
